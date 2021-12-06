@@ -7,6 +7,23 @@
 
 int main()
 {
-    std::cout << "Hello, World!" << std::endl;
+    std::string temp;
+    do {
+        std::cout << "Type command: ";
+        std::cin >> temp;
+
+        if(temp=="sum")
+            sum();
+        else if(temp=="save")
+            save();
+        else if(temp=="load")
+            load();
+        if (temp == "input")
+            input();
+        else if (temp == "display")
+            display();
+    }
+    while(temp!="exit");
+
     return 0;
 }
